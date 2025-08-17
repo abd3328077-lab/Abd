@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول أهداف الحياة التفاعلي</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        function toggleProgress(id) {
+            const element = document.getElementById(id);
+            element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body class="bg-gray-100 p-6"><div class="container mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-6">جدول الأهداف لتحقيق الاستقرار (تفاعلي كامل)</h1>
+
+    <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+        <thead class="bg-blue-800 text-white">
+            <tr>
+                <th class="py-3 px-4">الهدف</th>
+                <th class="py-3 px-4">المدة الزمنية</th>
+                <th class="py-3 px-4">الخطوات العملية</th>
+                <th class="py-3 px-4">مقياس التقدم</th>
+            </tr>
+        </thead>
+        <tbody class="text-gray-700">
+            <tr class="border-b">
+                <td class="py-2 px-4">أمان مالي أساسي</td>
+                <td class="py-2 px-4">0-6 شهور</td>
+                <td class="py-2 px-4">تحديد ميزانية شهرية - تعلم مهارة مباشرة بالدخل مثل QuickBooks أو Excel - إيجاد شغل مؤقت يغطي المصاريف</td>
+                <td class="py-2 px-4">
+                    <button onclick="toggleProgress('progress1')" class="bg-blue-500 text-white px-2 py-1 rounded">عرض/إخفاء التقدم</button>
+                    <div id="progress1" class="mt-1 p-2 bg-gray-100 rounded" style="display:none;">هل عندك ميزانية مكتوبة؟ هل حصلت دخل يغطي مصاريفك؟</div>
+                </td>
+            </tr>
+            <tr class="border-b bg-gray-50">
+                <td class="py-2 px-4">تحسين المهارات العملية</td>
+                <td class="py-2 px-4">0-6 شهور</td>
+                <td class="py-2 px-4">دورة كمبيوتر (Excel) - تطوير تطبيقات المحاسبة العملية</td>
+                <td class="py-2 px-4">
+                    <button onclick="toggleProgress('progress2')" class="bg-blue-500 text-white px-2 py-1 rounded">عرض/إخفاء التقدم</button>
+                    <div id="progress2" class="mt-1 p-2 bg-gray-100 rounded" style="display:none;">هل أتممت دورة كمبيوتر أساسية؟ هل زادت معرفتك بالمحاسبة العملية؟</div>
+                </td>
+            </tr>
+            <tr class="border-b">
+                <td class="py-2 px-4">لياقة بدنية</td>
+                <td class="py-2 px-4">0-6 شهور</td>
+                <td class="py-2 px-4">رياضة 3 مرات أسبوعيًا - ضبط الأكل (تقليل السكر والخبز الأبيض)</td>
+                <td class="py-2 px-4">
+                    <button onclick="toggleProgress('progress3')" class="bg-blue-500 text-white px-2 py-1 rounded">عرض/إخفاء التقدم</button>
+                    <div id="progress3" class="mt-1 p-2 bg-gray-100 rounded" style="display:none;">هل تلتزم بتمارين 3 مرات أسبوعياً؟ هل وزنك/طاقتك تحسنت؟</div>
+                </td>
+            </tr>
+            <tr class="border-b bg-gray-50">
+                <td class="py-2 px-4">دخل ثابت ومتزايد</td>
+                <td class="py-2 px-4">6 شهور - سنتين</td>
+                <td class="py-2 px-4">وظيفة محاسبة رسمية - شغل جانبي بسيط - توفير 10% من الدخل</td>
+                <td class="py-2 px-4">
+                    <button onclick="toggleProgress('progress4')" class="bg-blue-500 text-white px-2 py-1 rounded">عرض/إخفاء التقدم</button>
+                    <div id="progress4" class="mt-1 p-2 bg-gray-100 rounded" style="display:none;">هل حصلت على وظيفة ثابتة؟ هل لديك مدخرات شهرية؟</div>
+                </td>
+            </tr>
+            <tr class="border-b">
+                <td class="py-2 px-4">مهارة قوية قابلة للاستخدام بأي مكان</td>
+                <td class="py-2 px-4">6 شهور - سنتين</td>
+                <td class="py-2 px-4">تعلم برنامج محاسبة عالمي (SAP/Odoo) - التحضير لـ CMA Part 1</td>
+                <td class="py-2 px-4">
+                    <button onclick="toggleProgress('progress5')" class="bg-blue-500 text-white px-2 py-1 rounded">عرض/إخفاء التقدم</button>
+                    <div id="progress5" class="mt-1 p-2 bg-gray-100 rounded" style="display:none;">هل بدأت باستخدام برنامج محاسبة عالمي؟ هل درست CMA Part 1؟</div>
+                </td>
+            </tr>
+            <tr class="border-b bg-gray-50">
+                <td class="py-2 px-4">تطوير العلاقات الشخصية</td>
+                <td class="py-2 px-4">6 شهور - سنتين</td>
+                <td class="py-2 px-4">توسيع شبكة العلاقات - التصريح بالرغبة في الزواج لأهلك</td>
+                <td class="py-2 px-4">
+                    <button onclick="toggleProgress('progress6')" class="bg-blue-500 text-white px-2 py-1 rounded">عرض/إخفاء التقدم</button>
+                    <div id="progress6" class="mt-1 p-2 bg-gray-100 rounded" style="display:none;">هل زادت دائرة معارفك؟ هل بدأت خطوات جدية للزواج؟</div>
+                </td>
+            </tr>
+            <tr class="border-b">
+                <td class="py-2 px-4">استقرار مالي كامل</td>
+                <td class="py-2 px-4">2 - 5 سنوات</td>
+                <td class="py-2 px-4">وظيفة بدخل قوي أو مشروع خاص - صندوق ادخار 6 شهور - استثمار بسيط</td>
+                <td class="py-2 px-4">
+                    <button onclick="toggleProgress('progress7')" class="bg-blue-500 text-white px-2 py-1 rounded">عرض/إخفاء التقدم</button>
+                    <div id="progress7" class="mt-1 p-2 bg-gray-100 rounded" style="display:none;">هل لديك صندوق ادخار للطوارئ؟ هل دخلت مجال استثمار بسيط؟</div>
+                </td>
+            </tr>
+            <tr class="border-b bg-gray-50">
+                <td class="py-2 px-4">استقرار شخصي واجتماعي</td>
+                <td class="py-2 px-4">2 - 5 سنوات</td>
+                <td class="py-2 px-4">الزواج بعد تثبيت الدخل - الاستمرار في تطوير الكمبيوتر والمحاسبة</td>
+                <td class="py-2 px-4">
+                    <button onclick="toggleProgress('progress8')" class="bg-blue-500 text-white px-2 py-1 rounded">عرض/إخفاء التقدم</button>
+                    <div id="progress8" class="mt-1 p-2 bg-gray-100 rounded" style="display:none;">هل تزوجت؟ هل أصبحت خبيرًا معتمدًا بالمحاسبة والكمبيوتر؟</div>
+                </td>
+            </tr>
+            <tr class="border-b">
+                <td class="py-2 px-4">لياقة بدنية عالية</td>
+                <td class="py-2 px-4">2 - 5 سنوات</td>
+                <td class="py-2 px-4">روتين رياضي دائم - المحافظة على جسم صحي وطاقة عالية</td>
+                <td class="py-2 px-4">
+                    <button onclick="toggleProgress('progress9')" class="bg-blue-500 text-white px-2 py-1 rounded">عرض/إخفاء التقدم</button>
+                    <div id="progress9" class="mt-1 p-2 bg-gray-100 rounded" style="display:none;">هل لديك لياقة بدنية ثابتة؟ هل حافظت على الوزن والطاقة؟</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
